@@ -53,6 +53,9 @@ public class InputSystem
             case ConsoleKey.Escape:
                 IsReadInputs = false;
                 break;
+            default:
+                CurrentCommand = new UnknownCommand();
+                break;
         }
     }
 }
